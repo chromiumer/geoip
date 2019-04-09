@@ -4,6 +4,7 @@
 git clone https://github.com/chromiumer/geoip.git
 cd geoip
 go build
+
 ./geoip 8.8.8.8
 IP  : 8.8.8.8
 国家: 美国 United States US
@@ -16,3 +17,5 @@ IP  : 117.244.79.165
 时区: Asia/Kolkata
 坐标: 26.8509, 80.916
 ```
+
+参考：https://github.com/oschwald/geoip2-golang.git
