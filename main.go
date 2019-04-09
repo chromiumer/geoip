@@ -4,15 +4,17 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"os"
 
+	"github.com/atotto/clipboard"
 	"github.com/oschwald/geoip2-golang"
 )
 
 func main() {
 
 	var inputip string
-	inputip = os.Args[1]
+
+	//inputip = os.Args[1]
+	inputip, err := clipboard.ReadAll() //读取剪贴板中所复制ip
 
 	db, err := geoip2.Open("GeoLite2-City_20190409/GeoLite2-City.mmdb")
 	if err != nil {
