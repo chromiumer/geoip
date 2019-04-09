@@ -5,12 +5,9 @@ git clone https://github.com/chromiumer/geoip.git
 cd geoip
 go build
 
-./geoip 8.8.8.8
-IP  : 8.8.8.8
-国家: 美国 United States US
-坐标: 37.751, -97.822
+复制文本[ 117.244.79.165 ]内容(读取剪贴板中ip)
 
- ./geoip 117.244.79.165
+ ./geoip
 IP  : 117.244.79.165
 国家: 印度 India IN
 城市: 北方邦 Uttar Pradesh
